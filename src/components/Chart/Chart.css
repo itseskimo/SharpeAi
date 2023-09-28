@@ -1,0 +1,26 @@
+.chart_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.chart_container h6 {
+    font-size: xx-large;
+    color: white;
+}
+
+.date_dispay_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date_dispay_container span {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 6px;
+}

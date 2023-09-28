@@ -1,0 +1,182 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 40px 100px;
+}
+
+.grid_container section:nth-child(1) {
+  color: white;
+  border-radius: 12px;
+  background-color: #09090b;
+  border: 1px solid #17161b;
+}
+
+
+
+.input_field-container {
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styles for the main container */
+.dropdown_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styles for the label inside main */
+.dropdown_container label {
+  font-size: 16px;
+  color: white;
+}
+
+/* Styles for the section with ID 'listField1' */
+#listField1 {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown_rotate {
+  transform: rotate(180deg);
+}
+
+/* Styles for the container with border */
+#listField1>section {
+  width: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+  border: 1px solid #17161b;
+  background-color: black;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Styles for the text in the container */
+#listField1>section p {
+  font-size: 13px;
+  font-weight: medium;
+  color: #ccc;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Styles for the image in the container */
+.dropdown_state {
+  user-select: none;
+  pointer-events: none;
+  transition: all ease-in 0.1s;
+}
+
+/* Styles for the hidden ul */
+#hideTxtField1 {
+  width: 100%;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Styles for the list items in the ul */
+#hideTxtField1 li {
+  width: 100%;
+  padding: 10px 0;
+  list-style: none;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for list items */
+#hideTxtField1 li:hover {
+  background-color: #f0f0f0;
+  color: #09090b;
+}
+
+.borrow_input-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+#max_amt {
+  background-color: #17161b;
+  padding: 5px;
+  border: 2px solid #17161b;
+  border-radius: 6px;
+}
+
+.borrow_input-container input {
+  outline: none;
+  border: 1px solid #17161b;
+  background-color: black;
+  padding: 13px;
+  border-radius: 6px;
+  width: 100%;
+  color: white;
+}
+
+.inputField_submit_container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.inputField_submit {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  width: max-content;
+}
+
+.blank_column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blank_column div:nth-child(1) {
+  border-radius: 12px;
+  background-color: black;
+  border: 1px solid #17161b;
+  height: 60%;
+}
+
+.blank_column div:nth-child(2) {
+  border-radius: 12px;
+  background-color: black;
+  border: 1px solid #17161b;
+  height: 40%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
