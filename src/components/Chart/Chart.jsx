@@ -13,7 +13,7 @@ const Chart = () => {
         const response = await fetch('https://api.llama.fi/summary/fees/lyra?dataType=dailyFees')
         const res = await response.json()
         setChartData(convertToObjects(res.totalDataChart)); //Function to convert into array of objects
-        setArrayLength(res.totalDataChart)
+        setArrayLength(res.totalDataChart) //To Track overall length of data
     }
 
     useEffect(() => {
