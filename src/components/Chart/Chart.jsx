@@ -75,7 +75,7 @@ const Chart = () => {
         <div className='chart_container'>
             <div className='date_dispay_container'>
                 <span onClick={() => handleCount('decrement')}>-</span>
-                <h6>Chart of {chartTimeController} Days</h6>
+                <h6>Chart of {chartTimeController === 480 ? `${chartTimeController}+` : chartTimeController} Days</h6>
                 <span onClick={() => handleCount('increment')}>+</span>
             </div>
 
